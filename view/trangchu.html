@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">STT</th>
+      <th scope="col">Tên sinh viên</th>
+      <th scope="col">Tuổi</th>
+      <th scope="col">Địa chỉ</th>
+      <th scope="col">Giới tính</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="student in listStudent">
+    <tr>
+      <th scope="row">{{student.id}}</th>
+      <td>{{student.ten}}</td>
+      <td>{{student.tuoi}}</td>
+      <td>{{student.diaChi}}</td>
+      <td>
+        <span ng-if="student.gioiTinh==1">Nam</span>
+        <span ng-if="student.gioiTinh==2">Nữ</span>
+        <span ng-if="student.gioiTinh==3">Khác</span>
+      </td>
+      <td>
+        <a href="#!/trang-chi-tiet/{{student.id}}"><button class="btn btn-outline-warning">Chi tiết</button></a>
+        <a href="#!/trang-sua/{{student.id}}"><button class="btn btn-outline-warning">Sửa</button></a>
+        <button ng-click="delete(student.id)" type="button" class="btn btn-outline-danger">Xóa</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a href="#!/trang-them"><button class="btn btn-outline-success">Thêm</button></a>

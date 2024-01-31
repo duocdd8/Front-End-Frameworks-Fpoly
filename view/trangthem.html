@@ -1,0 +1,36 @@
+<form ng-submit="addStudent()">
+    <div class="mb-3">
+        <label for="" class="form-label">Nhập tên</label>
+        <input ng-model="student.ten" type="text" class="form-control" id="ten">
+        <span class="text-danger" ng-if="test.testTen">
+            Vui lòng nhập vào tên
+        </span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nhập Tuổi</label>
+        <input ng-model="student.tuoi" type="text" class="form-control" id="tuoi">
+        <span class="text-danger" ng-if="test.testTuoi">
+            Vui lòng nhập vào tuổi
+        </span>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Địa chỉ</label>
+        <input  ng-model="student.diaChi" type="text" class="form-control" id="diaChi">
+        <span class="text-danger" ng-if="test.testdiaChi">
+            Vui lòng nhập vào địa chỉ
+        </span>
+    </div>
+    <label for="" class="form-label">Giới tính</label>
+    <select ng-model="student.gioiTinh" class="form-select" aria-label="Default select example">
+        <option value="1">Nam</option>
+        <option value="2">Nữ</option>
+        <option value="3">Khác</option>
+      </select>
+      <span class="text-danger" ng-if="test.testgioiTinh">
+        Vui lòng chọn giới tính
+    </span>
+    <hr>
+    <button type="submit" class="btn btn-primary">Thêm</button>
+    <a href="#!trang-chu"><button type="submit" class="btn btn-success">Trang chủ</button></a>
+
+</form>

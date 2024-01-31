@@ -1,0 +1,51 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "username": "duocddph21280",
+      "password": "123456",
+      "fullname": "Nguyen Van A"
+    },
+    {
+      "id": "2",
+      "username": "aaaaaaaaaaaaa",
+      "password": "123456",
+      "fullname": "Nguyen Van A"
+    },
+    {
+      "id": "3",
+      "username": "bbbbbbbbbbb",
+      "password": "123456",
+      "fullname": "Nguyen Van A"
+    },
+    {
+      "id": "4",
+      "username": "cccccccccccc",
+      "password": "123456",
+      "fullname": "Nguyen Van A"
+    }
+  ],
+  "students": [
+    {
+      "ten": "Nguyễn Văn D",
+      "tuoi": 18,
+      "diaChi": "Ha Nội",
+      "gioiTinh": "1",
+      "id": "4"
+    },
+    {
+      "ten": "Nguyễn Trí Sơn",
+      "tuoi": "19",
+      "diaChi": "Hà Nội",
+      "gioiTinh": "2",
+      "id": "33e0"
+    },
+    {
+      "id": "eb8e",
+      "ten": "Nguyễn Văn D",
+      "tuoi": "19",
+      "diaChi": "Hà Nội",
+      "gioiTinh": "1"
+    }
+  ]
+}

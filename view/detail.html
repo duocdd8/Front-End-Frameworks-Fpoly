@@ -1,0 +1,22 @@
+
+    <div class="mb-3">
+        <label for="" class="form-label">Nhập tên</label>
+        <input ng-model="student.ten" type="text" class="form-control" id="ten" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Nhập Tuổi</label>
+        <input ng-model="student.tuoi" type="text" class="form-control" id="tuoi" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Địa chỉ</label>
+        <input ng-model="student.diaChi" type="text" class="form-control" id="diaChi" readonly>
+    </div>
+    <select ng-model="student.gioiTinh" class="form-select" aria-label="Default select example" disabled>
+        <option ng-selected="">Chọn giới tính</option>
+        <option ng-selected="student.gioiTinh ==1" value="1">Nam</option>
+        <option ng-selected="student.gioiTinh ==2" value="2">Nữ</option>
+        <option ng-selected="student.gioiTinh ==3" value="3">Khác</option>
+      </select>
+    <hr>
+    <button type="submit" class="btn btn-primary">Sửa</button>
+    <a href="#!trang-chu"><button type="submit" class="btn btn-success">Trang chủ</button></a>
